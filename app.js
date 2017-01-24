@@ -20,8 +20,8 @@ app.get('/g/', function(req, res) {
 	  
 	})
 });
- var port = process.env.OPENSHIFT_NODEJS_PORT || 3000
- var ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+ var port = process.env.PORT || 3000
+ var ip = process.env.IP || "127.0.0.1";
 
 var server = app.listen(port, function () {
   console.log('app listening at http://%s:%s', ip, port);
